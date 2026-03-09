@@ -50,7 +50,7 @@
             box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5), inset 0 0 20px rgba(59, 130, 246, 0.1);
             transition: all 0.3s ease;
         }
-        
+
         .glass:hover {
             border-color: rgba(139, 92, 246, 0.5);
             box-shadow: 0 4px 30px rgba(0, 0, 0, 0.6), inset 0 0 30px rgba(139, 92, 246, 0.2);
@@ -78,8 +78,11 @@
         .hero::before {
             content: '';
             position: absolute;
-            top: 0; left: 0; right: 0; bottom: 0;
-            background-image: 
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image:
                 linear-gradient(rgba(59, 130, 246, 0.15) 1px, transparent 1px),
                 linear-gradient(90deg, rgba(59, 130, 246, 0.15) 1px, transparent 1px);
             background-size: 40px 40px;
@@ -90,8 +93,13 @@
         }
 
         @keyframes gridMove {
-            0% { transform: perspective(500px) rotateX(60deg) translateY(0) translateZ(-200px); }
-            100% { transform: perspective(500px) rotateX(60deg) translateY(40px) translateZ(-200px); }
+            0% {
+                transform: perspective(500px) rotateX(60deg) translateY(0) translateZ(-200px);
+            }
+
+            100% {
+                transform: perspective(500px) rotateX(60deg) translateY(40px) translateZ(-200px);
+            }
         }
 
         .hero::after {
@@ -106,10 +114,17 @@
             z-index: -2;
             animation: pulseGlow 4s infinite alternate;
         }
-        
+
         @keyframes pulseGlow {
-            0% { opacity: 0.5; transform: translate(-50%, -50%) scale(0.8); }
-            100% { opacity: 1; transform: translate(-50%, -50%) scale(1.1); }
+            0% {
+                opacity: 0.5;
+                transform: translate(-50%, -50%) scale(0.8);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translate(-50%, -50%) scale(1.1);
+            }
         }
 
         .profile-wrapper {
@@ -170,10 +185,15 @@
             text-shadow: 0 0 20px rgba(96, 165, 250, 0.5);
             animation: textGlow 3s infinite alternate;
         }
-        
+
         @keyframes textGlow {
-            0% { text-shadow: 0 0 20px rgba(96, 165, 250, 0.3); }
-            100% { text-shadow: 0 0 40px rgba(192, 132, 252, 0.6); }
+            0% {
+                text-shadow: 0 0 20px rgba(96, 165, 250, 0.3);
+            }
+
+            100% {
+                text-shadow: 0 0 40px rgba(192, 132, 252, 0.6);
+            }
         }
 
         .hero h2 {
@@ -622,25 +642,34 @@
         <!-- Education & Professional Training -->
         <section id="education">
             <div class="section-header">
-                <h2 class="section-title" style="text-shadow: 0 0 10px rgba(59, 130, 246, 0.8);">Education & Professional Training</h2>
-                <p class="section-subtitle">My academic background and specialized certifications in data and finance.</p>
+                <h2 class="section-title" style="text-shadow: 0 0 10px rgba(59, 130, 246, 0.8);">Education &
+                    Professional Training</h2>
+                <p class="section-subtitle">My academic background and specialized certifications in data and finance.
+                </p>
             </div>
 
             <div class="metrics-grid" style="grid-template-columns: 1fr; max-width: 900px; margin: 0 auto; gap: 32px;">
                 <!-- Digilians -->
                 <div class="project-card glass" style="display: flex; flex-direction: column; text-align: left;">
                     <div class="project-content" style="padding: 32px;">
-                        <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 16px;">
+                        <div
+                            style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 16px;">
                             <div>
-                                <h3 class="project-title" style="font-size: 1.5rem; color: #60a5fa; margin-bottom: 4px;">Diploma in Data Analytics & AI</h3>
-                                <h4 style="color: #cbd5e1; font-weight: 500; margin-bottom: 16px; font-size: 1.1rem;"><i class="fas fa-university" style="margin-right: 8px;"></i>Digilians</h4>
+                                <h3 class="project-title"
+                                    style="font-size: 1.5rem; color: #60a5fa; margin-bottom: 4px;">Diploma in Data
+                                    Analytics & AI</h3>
+                                <h4 style="color: #cbd5e1; font-weight: 500; margin-bottom: 16px; font-size: 1.1rem;"><i
+                                        class="fas fa-university" style="margin-right: 8px;"></i>Digilians</h4>
                             </div>
-                            <span class="tag" style="background: rgba(16, 185, 129, 0.2); color: #34d399; border: 1px solid #10b981;">Completed</span>
+                            <span class="tag"
+                                style="background: rgba(16, 185, 129, 0.2); color: #34d399; border: 1px solid #10b981;">Completed</span>
                         </div>
                         <ul style="color: var(--text-muted); margin-left: 20px; line-height: 1.8; margin-bottom: 24px;">
                             <li>Studied Data Analytics, Artificial Intelligence, and Machine Learning fundamentals.</li>
-                            <li>Gained hands-on experience in Power BI, Excel, SQL, Python, statistics, SPSS, and data mining.</li>
-                            <li>Built dashboards, performed data analysis, and applied data visualization techniques to real-world datasets.</li>
+                            <li>Gained hands-on experience in Power BI, Excel, SQL, Python, statistics, SPSS, and data
+                                mining.</li>
+                            <li>Built dashboards, performed data analysis, and applied data visualization techniques to
+                                real-world datasets.</li>
                         </ul>
                         <div class="tag-list">
                             <span class="tag">Power BI</span>
@@ -655,18 +684,27 @@
                 <!-- DEBI -->
                 <div class="project-card glass" style="display: flex; flex-direction: column; text-align: left;">
                     <div class="project-content" style="padding: 32px;">
-                        <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 16px;">
+                        <div
+                            style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 16px;">
                             <div>
-                                <h3 class="project-title" style="font-size: 1.5rem; color: #c084fc; margin-bottom: 4px;">ERP Oracle Accounting Specialist</h3>
-                                <h4 style="color: #cbd5e1; font-weight: 500; margin-bottom: 16px; font-size: 1.1rem;"><i class="fas fa-building" style="margin-right: 8px;"></i>DEBI – ERP Oracle Accounting (EBS)</h4>
+                                <h3 class="project-title"
+                                    style="font-size: 1.5rem; color: #c084fc; margin-bottom: 4px;">ERP Oracle Accounting
+                                    Specialist</h3>
+                                <h4 style="color: #cbd5e1; font-weight: 500; margin-bottom: 16px; font-size: 1.1rem;"><i
+                                        class="fas fa-building" style="margin-right: 8px;"></i>DEBI – ERP Oracle
+                                    Accounting (EBS)</h4>
                             </div>
-                            <span class="tag" style="background: rgba(16, 185, 129, 0.2); color: #34d399; border: 1px solid #10b981;">Completed</span>
+                            <span class="tag"
+                                style="background: rgba(16, 185, 129, 0.2); color: #34d399; border: 1px solid #10b981;">Completed</span>
                         </div>
                         <ul style="color: var(--text-muted); margin-left: 20px; line-height: 1.8; margin-bottom: 24px;">
                             <li>Worked on Oracle ERP Accounting modules, handling financial and transactional data.</li>
-                            <li>Supported data entry, validation, and reconciliation to ensure data accuracy and consistency.</li>
-                            <li>Generated basic reports and assisted in analyzing accounting and operational data to support business processes.</li>
-                            <li>Collaborated with cross-functional teams to understand business requirements and improve data quality.</li>
+                            <li>Supported data entry, validation, and reconciliation to ensure data accuracy and
+                                consistency.</li>
+                            <li>Generated basic reports and assisted in analyzing accounting and operational data to
+                                support business processes.</li>
+                            <li>Collaborated with cross-functional teams to understand business requirements and improve
+                                data quality.</li>
                         </ul>
                         <div class="tag-list">
                             <span class="tag">Oracle ERP</span>
@@ -687,40 +725,95 @@
             </div>
 
             <div class="showcase-grid">
-                <!-- Project 1 (Data Analytics & AI) -->
+                <!-- Project 1 (Excel) -->
                 <div class="project-card glass">
-                    <a href="ai_dashboard.png" target="_blank" style="display: block; overflow: hidden;">
-                        <img src="ai_dashboard.png" alt="AI Analytics Dashboard" class="project-img"
+                    <a href="excel_project.png" target="_blank" style="display: block; overflow: hidden;">
+                        <img src="excel_project.png" alt="Advanced Excel Analytics" class="project-img"
                             title="Click to view full size"
-                            style="border-bottom: 2px solid rgba(139, 92, 246, 0.5);">
+                            onerror="this.src='https://images.unsplash.com/photo-1543286386-713bdd548da4?auto=format&fit=crop&w=800&q=80'"
+                            style="border-bottom: 2px solid rgba(16, 185, 129, 0.5);">
                     </a>
                     <div class="project-content">
-                        <h3 class="project-title" style="color: #60a5fa; text-shadow: 0 0 8px rgba(96, 165, 250, 0.4);">AI-Powered Analytics Operations</h3>
-                        <p class="project-desc">Applied advanced machine learning fundamentals and data mining techniques utilizing Python and SPSS to uncover profound, actionable insights and build predictive models for real-world datasets.</p>
+                        <h3 class="project-title" style="color: #34d399; text-shadow: 0 0 8px rgba(52, 211, 153, 0.4);">
+                            Advanced Excel Financial Modeling</h3>
+                        <p class="project-desc">Engineered complex financial models and dynamic dashboards using
+                            Advanced Excel features including Power Query, Pivot Tables, DAX, and VBA macros to automate
+                            reporting workflows.</p>
                         <div class="tag-list">
-                            <span class="tag">Python</span>
-                            <span class="tag">Machine Learning</span>
-                            <span class="tag">Data Visualization</span>
-                            <span class="tag">SPSS</span>
+                            <span class="tag">Advanced Excel</span>
+                            <span class="tag">Power Query</span>
+                            <span class="tag">Pivot Tables</span>
+                            <span class="tag">Data Modeling</span>
                         </div>
                     </div>
                 </div>
 
-                <!-- Project 2 (ERP Oracle Accounting) -->
+                <!-- Project 2 (Power BI) -->
                 <div class="project-card glass">
-                    <a href="erp_dashboard.png" target="_blank" style="display: block; overflow: hidden;">
-                        <img src="erp_dashboard.png" alt="ERP Oracle Dashboard" class="project-img"
+                    <a href="powerbi_project.png" target="_blank" style="display: block; overflow: hidden;">
+                        <img src="powerbi_project.png" alt="Power BI Dashboard" class="project-img"
                             title="Click to view full size"
+                            onerror="this.src='https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80'"
+                            style="border-bottom: 2px solid rgba(245, 158, 11, 0.5);">
+                    </a>
+                    <div class="project-content">
+                        <h3 class="project-title" style="color: #fbbf24; text-shadow: 0 0 8px rgba(251, 191, 36, 0.4);">
+                            Interactive Power BI Dashboards</h3>
+                        <p class="project-desc">Designed and deployed high-performance business intelligence solutions
+                            in Power BI. Created interactive data visualizations, defined complex DAX measures, and
+                            optimized data refresh lifecycles.</p>
+                        <div class="tag-list">
+                            <span class="tag">Power BI</span>
+                            <span class="tag">DAX</span>
+                            <span class="tag">Business Intelligence</span>
+                            <span class="tag">Data Vis</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 (SQL) -->
+                <div class="project-card glass">
+                    <a href="sql_project.png" target="_blank" style="display: block; overflow: hidden;">
+                        <img src="sql_project.png" alt="SQL Database Project" class="project-img"
+                            title="Click to view full size"
+                            onerror="this.src='https://images.unsplash.com/photo-1544383835-bda2bc66a55d?auto=format&fit=crop&w=800&q=80'"
                             style="border-bottom: 2px solid rgba(59, 130, 246, 0.5);">
                     </a>
                     <div class="project-content">
-                        <h3 class="project-title" style="color: #c084fc; text-shadow: 0 0 8px rgba(192, 132, 252, 0.4);">ERP Financial Ecosystem</h3>
-                        <p class="project-desc">Managed and optimized Oracle EBS Accounting modules, performing complex reconciliations, generating high-level financial reports, and ensuring transactional data integrity across operations.</p>
+                        <h3 class="project-title" style="color: #60a5fa; text-shadow: 0 0 8px rgba(96, 165, 250, 0.4);">
+                            Complex SQL Data Warehousing</h3>
+                        <p class="project-desc">Architected scalable relational databases and wrote complex, highly
+                            optimized SQL queries (CTEs, Window Functions, Joins) to extract, transform, and load
+                            massive enterprise datasets.</p>
                         <div class="tag-list">
-                            <span class="tag">Oracle EBS</span>
-                            <span class="tag">Financial Reporting</span>
-                            <span class="tag">Data Reconciliation</span>
-                            <span class="tag">ERP Management</span>
+                            <span class="tag">SQL Server</span>
+                            <span class="tag">MySQL</span>
+                            <span class="tag">ETL</span>
+                            <span class="tag">Database Design</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 (Python EDA) -->
+                <div class="project-card glass">
+                    <a href="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=800&q=80"
+                        target="_blank" style="display: block; overflow: hidden;">
+                        <img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=800&q=80"
+                            alt="Python EDA Project" class="project-img" title="Click to view full size"
+                            style="border-bottom: 2px solid rgba(139, 92, 246, 0.5);">
+                    </a>
+                    <div class="project-content">
+                        <h3 class="project-title"
+                            style="color: #c084fc; text-shadow: 0 0 8px rgba(192, 132, 252, 0.4);">Exploratory Data
+                            Analysis (EDA) in Python</h3>
+                        <p class="project-desc">Leveraged Python (Pandas, NumPy) to clean and manipulate messy data.
+                            Conducted thorough Exploratory Data Analysis (EDA) and built stunning visual narratives via
+                            Seaborn and Matplotlib.</p>
+                        <div class="tag-list">
+                            <span class="tag">Python</span>
+                            <span class="tag">Pandas / NumPy</span>
+                            <span class="tag">Seaborn / Matplotlib</span>
+                            <span class="tag">EDA</span>
                         </div>
                     </div>
                 </div>
